@@ -1,0 +1,55 @@
+@import "base/all";
+@import "layout/all";
+
+.header-bottom {
+  .nav-mobie {
+    display: none;
+  }
+}
+.slide-show {
+  .slide-item {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .conten {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+  }
+  .slick-custom {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+  }
+  .slick-custom li button {
+    display: none;
+  }
+  ul.slick-custom{
+    padding-left: 0;
+    gap: 20px;
+  }
+  .slick-custom li {
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid rgba(231, 231, 231, 0.6);
+    transition: all 1s ease-in-out;
+    transition: all 0.5;
+    cursor: pointer;
+  }
+  .slick-custom li.slick-active {
+    background-color: #fff;
+    border: 3px solid #fff;
+  }
+}
